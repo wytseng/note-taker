@@ -1,6 +1,22 @@
 [
     {
-        "title":"Test Title",
-        "text":"Test text"
+        "title": "Note with short id",
+        "text": "This is to test id generate from short id",
+        "id": "qAXsJMJTX"
+    },
+    {
+        "title": "Another New Note",
+        "text": "Testing saving on user interface ",
+        "id": "CfNqY-qrU"
+    },
+    {
+        "title": "HELLO WORLD",
+        "text": "hello world!!",
+        "id": "5vaEOX8WS"
+    },
+    {
+        "title": "Weekend",
+        "text": "filming\nhw\npractice \nwinterfest",
+        "id": "PLyEW1wLH"
     }
 ]
