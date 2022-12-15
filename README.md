@@ -26,7 +26,14 @@ However, if you would like to run the application on your local server, you can 
 
 This application is free to use by anyone. 
 
-To start off, simply click "Get Started" from the home page. Then you should be displayed 
+To start off, simply click "Get Started" from the home page. Then you should brought to the 'notes' page where all saved notes are listed. 
+
+You can add notes through this page by clicking on the plus icon in the right corner. As you fill out the note title and note text, a save icon will show up in the right corner. When clicking on the save icon, the new note will be added to the database and the page will then refresh to reflect the new changes. 
+
+You can also delete a note simply by clicking on the red trach icon next to the note you would like to delete. Likely, the page will also refresh to display the updated changes. 
+
+Here is a video demonstration of the webpage functionalities: https://drive.google.com/file/d/1TukV3uMixbkEbTGzAlg1PgiA2WRMI-8R/view.
+
 
 ## License 
 
