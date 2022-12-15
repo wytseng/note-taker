@@ -41,5 +41,23 @@ notes.post('/', (req, res) => {
   }
 });
 
+notes.delete('/:id', (req, res) => {
+
+  fs.readFile(path.join('db','db.json'), 'utf8', (err, data) => {
+    if (err) throw err;
+    const parsedData = JSON.parse(data);
+    const index = parsedData.findIndex((obj) => obj.id === req.params.id);
+    const deletedNote = parsedData[index];
+    parsedData.splice(index,1);
+    fs.writeFile(path.join('db','db.json'), JSON.stringify(parsedData, null, 4), (err) => {
+      err ? console.log(err) : console.log(`\nDeleted ${deletedNote.title} from db.json.`)
+    });
+    const response = {
+      status: "delete success",
+      body: deletedNote,
+    }
+    res.json(response);
+  });
+});
 
 module.exports = notes;
